@@ -209,7 +209,7 @@ Um recurso atraente do Spark é seu suporte a diversos modos de implantação, p
 | Mode | Spark driver | Spark executor | Cluster manager |
 | :---: | :---: | :---: | :---: |
 | Local | Runs on a single JVM, like a laptop or single node | Runs on the same JVM as the driver | Runs on the same host |
-| Standalone | Can run on any node in the cluster |cell data3| Each node in the cluster will launch its own executor JVM | Can be allocated arbitrarily to any host in the cluster |
+| Standalone | Can run on any node in the cluster | Each node in the cluster will launch its own executor JVM | Can be allocated arbitrarily to any host in the cluster |
 | YARN (client) | Runs on a client, not part of the cluster | YARN’s NodeManager’s container | YARN’s Resource Manager works with YARN’s Application Master to allocate the containers on NodeManagers for executors |
 | YARN (cluster) | Runs with the YARN Application Master | Same as YARN client mode | Same as YARN client mode |
 | Kubernetes | Runs in a Kubernetes pod | Each worker runs within its own pod | Kubernetes Master |
